@@ -1,0 +1,34 @@
+<!--Exercise #3
+Write a function and call it when clicking a button to show an alert with:
+
+The number of links on the page
+The first link in the page
+The last link in the page-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://github.com/generation-org/JS/tree/master/JS-06%20-%20DOM%20Manipulation">Link1</a>
+    <a href="https://www.w3schools.com/js/js_input_examples.asp">Link2</a>
+    <a href="https://www.w3schools.com/js/js_htmldom_eventlistener.asp">Link3</a>
+
+    <button type="button" onclick="click_me()">Click Me!</button>
+
+    <script>
+        function click_me(){
+            alert("The number of links is: " + document.links.length);
+
+            alert("The first link is: " + document.links[0]);
+
+            alert("The last link is: " + document.links[(document.links.length - 1)]);
+
+        }
+    </script>
+</body>
+</html>
